@@ -1,0 +1,222 @@
+html,
+body,
+#app,
+#login,
+#admin{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-family:'\5FAE\8F6F\96C5\9ED1';
+}
+ul,li{
+    list-style: none;
+}
+ul,li,p{
+    margin: 0;
+    padding: 0;
+}
+p{
+    line-height: 1.7;
+}
+.text-right{
+    text-align: right;
+}
+.pagination{
+    min-width: 100px !important;
+}
+
+/* 面包屑 */
+.route-link{
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.route-link:hover{
+    color: #1e7cb3;
+}
+.route-link:after{
+    content: '/';
+    font-size: 13px;
+    color: #aaa;
+    padding: 0 5px;
+}
+/* 导航 */
+header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #222;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    color: #fff;
+}
+
+header .title{
+    display: block;
+    float: left;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header .username{
+    color: #fff;
+    height: 50px;
+}
+header .header-menu-btn{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: background .24s ease 0s;
+    -moz-transition: background .24s ease 0s;
+    -ms-transition: background .24s ease 0s;
+    transition: background .24s ease 0s;
+}
+header .header-menu-btn:hover{
+     background: rgba(255,255,255,.3);
+}
+/* 登录 */
+#login {
+    background: #ddd;
+    text-align: center;
+    display: table;
+}
+#login .wrap {
+    display: table-cell;
+    width:100%;
+    height: 100%;
+    vertical-align: middle;
+}
+#login .container{
+    width: 380px;
+    margin: 0 auto;
+}
+#login .name {
+    font-weight: normal;
+    padding: 0;
+    margin: 30px 0;
+}
+#login .input,
+#login .button {
+    margin-bottom: 15px;
+}
+#login .button {
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+/* 菜单 */
+#menu{
+    width: 200px;
+    height: 100%;
+    margin-left: -200px;
+    float: left;
+    box-sizing: border-box;
+    background: #333;
+}
+#menu .el-menu-item{
+    font-size: 13px;
+    height: 38px;
+    line-height: 38px;
+    color: #aaa;
+}
+#menu .el-menu-item:hover,#menu .el-menu-item:hover .fa{
+    color: #fff;
+    background: rgba(0,0,0,0);
+}
+#menu .el-menu-item.is-active{
+    background-color: #9c0303;
+    color: #fff;
+    font-weight: bold;
+}
+#menu .el-menu-item.is-active .fa{
+    color: #fff; 
+}
+#menu .el-menu-item .fa{
+    margin-top: -3px;width: 15px;overflow: hidden;
+    color: #aaa;
+}
+
+/* 页面内容显示区域 */
+#admin{
+    padding: 50px 0 0 200px;
+    overflow: hidden;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+}
+.main-wrap{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px 10px 0px;  
+    box-sizing: border-box;
+}
+.main-content{
+    box-sizing: border-box; 
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y:auto; 
+}
+
+/* 面包屑 */
+.breadcrumb{
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f5;
+    position: absolute;
+    width: 100%;
+}
+.breadcrumb-wrap{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+}
+.breadcrumb-name,.route-link{
+    font-size: 12px;
+    color: #333;
+}
+.breadcrumb-wrap button{
+    margin-left: 15px !important;
+    font-size: 12px !important;
+    color: rgb(96, 125, 139) !important;
+}
+
+
+/*登录下拉*/
+.popper__arrow {
+    display: none !important;
+}
+.el-popper {
+    margin-top: 5px !important;
+}
+.el-select-dropdown__item {
+    font-size: 12px !important;
+    text-align: center !important;
+    line-height: 30px !important;
+    height: 30px !important;
+    padding: 0 !important;
+}
+.el-pagination__jump {
+    margin-left: 0px !important;
+}
